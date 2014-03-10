@@ -1,4 +1,5 @@
 exports.config =
+  sourceMaps: false
   paths:
     public:
       'site'
@@ -18,7 +19,10 @@ exports.config =
       joinTo:
         'css/main.css': /^(app|vendor)/
       order: {
-        before: ['vendor/styles/bootstrap/bootstrap.less']
+        before: [
+#          'vendor/styles/bootstrap/bootstrap.less'
+          'vendor/styles/bootstrap/dev-mixins.less'
+        ]
       }
     templates:
       joinTo: 'js/app.js'
