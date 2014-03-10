@@ -1,0 +1,55 @@
+.text-replace() {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#grid-w {
+    font-size: 0;
+    .col-w(@xPerc){
+        font-size: @baseFontSize;
+        width: 100%/@xPerc;
+        letter-spacing: normal;
+        vertical-align: top;
+        display: inline-block;
+    }
+}
+.margin-clean(){
+    margin: 0;
+    padding: 0;
+}
+
+.placeholder-color(@colorValue) {
+    ::-webkit-input-placeholder {
+        color: @colorValue;
+    }
+    :-moz-placeholder { 
+       color: @colorValue;  
+    }
+    ::-moz-placeholder {  
+       color: @colorValue;  
+    }
+    :-ms-input-placeholder {  
+       color: @colorValue;  
+    }
+}
+
+
+.pseudo-styles(@w,@h){
+  content:'';
+  display: block;
+  position: absolute;
+  width:@w;
+  height:@h;
+}
+.extraBorderTop(@color){
+    &:before{
+        background-color: @color;
+        .pseudo-styles(100%,1px);
+    }
+}
+.extraBorderBottom(@color,@height){
+    &:after{
+        background-color: @color;
+        .pseudo-styles(100%,@height);
+    }
+}
