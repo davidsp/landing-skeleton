@@ -1,18 +1,18 @@
 {
-  "name": "your-app",
-  "description": "Description",
-  "author": "Your Name",
-  "version": "0.0.1",
+  "name": "landing-skeleton",
+  "description": "Brunch skeleton for a quick start of new small-mid sized projects",
+  "author": "David Saiz",
+  "version": "0.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/davidsp/landing-skeleton"
   },
   "scripts": {
     "start": "brunch watch --server",
     "test": "brunch test"
   },
   "dependencies": {
-"javascript-brunch": ">= 1.0 < 1.6",
+    "javascript-brunch": ">= 1.0 < 1.6",
     "css-brunch": ">= 1.0 < 1.6",
     "uglify-js-brunch": ">= 1.0 < 1.6",
     "clean-css-brunch": ">= 1.0 < 1.6",
