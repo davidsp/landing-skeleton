@@ -1,8 +1,7 @@
+var indexTpl = require('templates/index');
 
 exports.index = function(){
-    $(function() {
-        console.log('ad');
-        var index = _.template(document.getElementById('index').innerHTML);
-        $('#site').append(index({}));
-    });
+    alert('af')
+    var mark = indexTpl({})
+    $('#site').append(mark);
 }

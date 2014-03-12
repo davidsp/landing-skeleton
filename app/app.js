@@ -1,6 +1,6 @@
-var index = require('scripts/index');
+var index = require('scripts/index').index;
 
 
 window.onload = function() {
-  document.getElementById('site').innerText = 'asdfasdf';
+  index();
 }

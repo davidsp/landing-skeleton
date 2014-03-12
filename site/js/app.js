@@ -91,34 +91,21 @@
   globals.require.brunch = true;
 })();
 require.register("app", function(exports, require, module) {
-var index = require('scripts/index');
+var index = require('scripts/index').index;
 
 
 window.onload = function() {
-  document.getElementById('site').innerText = 'asdfasdf';
-}
-});
-
-;require.register("scripts/app", function(exports, require, module) {
-
-exports.hello = function(){
-    $(function() {
-        console.log('ad');
-        var index = _.template(document.getElementById('index').innerHTML);
-        $('#site').append(index({}));
-    });
-      return 'Hello World!';
+  index();
 }
 });
 
 ;require.register("scripts/index", function(exports, require, module) {
+var indexTpl = require('templates/index');
 
 exports.index = function(){
-    $(function() {
-        console.log('ad');
-        var index = _.template(document.getElementById('index').innerHTML);
-        $('#site').append(index({}));
-    });
+    alert('af')
+    var mark = indexTpl({})
+    $('#site').append(mark);
 }
 });
 
@@ -126,7 +113,7 @@ exports.index = function(){
 module.exports = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
-__p+='<script id="index" type="text/template">\r\n    <p>this is the index template</p>\r\n</script>';
+__p+='<script id="index-tpl" type="text/template">\r\n    <p>this is the index template</p>\r\n</script>';
 }
 return __p;
 };

@@ -94,7 +94,7 @@ require.register("templates/index", function(exports, require, module) {
 module.exports = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
-__p+='<script id="index" type="text/template">\r\n    <p>this is the index template</p>\r\n</script>';
+__p+='<script id="index-tpl" type="text/template">\r\n    <p>this is the index template</p>\r\n</script>';
 }
 return __p;
 };
