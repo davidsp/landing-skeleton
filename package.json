@@ -12,13 +12,13 @@
     "test": "brunch test"
   },
   "dependencies": {
-    "javascript-brunch": ">= 1.0 < 1.6",
-    "css-brunch": ">= 1.0 < 1.6",
-    "uglify-js-brunch": ">= 1.0 < 1.6",
-    "clean-css-brunch": ">= 1.0 < 1.6",
-    "less-brunch": "1.5.1",
-    "underscore-brunch": ">= 1.0 < 1.5",
-    "underscore-template-brunch": "1.4.4",
-    "auto-reload-brunch": ">= 1.0 < 1.8"
+    "javascript-brunch": "latest",
+    "clean-css-brunch": "latest",
+    "css-brunch": "latest",
+    "uglify-js-brunch": "latest",
+    "less-brunch": "latest",
+    "underscore-brunch": "latest",
+    "underscore-template-brunch": "latest",
+    "auto-reload-brunch": "latest"
   }
 }

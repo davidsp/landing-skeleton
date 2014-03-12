@@ -28,7 +28,6 @@ It is meant to work as an starting point when putting together small-medium size
     * Live.reload
 
 * Todos.
-    * Add sass support.
-    * Include bootstrap's sass version.
     * Clean and group mixins (simple grids and the like).
     * Add mixins for absolute/centering/flexboxing stuff. 
+    * Create proper index file

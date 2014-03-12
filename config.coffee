@@ -20,9 +20,10 @@ exports.config =
         'css/main.css': /^(app|vendor)/
       order: {
         before: [
-#          'vendor/styles/bootstrap/bootstrap.less'
+          'vendor/styles/bootstrap/bootstrap.less'
           'vendor/styles/bootstrap/dev-mixins.less'
         ]
       }
     templates:
+      defaultExtension: 'jst'
       joinTo: 'js/app.js'
