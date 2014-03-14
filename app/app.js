@@ -1,6 +1,5 @@
-var index = require('scripts/index').index;
-
-
-window.onload = function() {
-  index();
-}
+var App = (function() {
+    $(function() {
+        var section = require("scripts/index");
+    });
+})();

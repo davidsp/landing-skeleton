@@ -91,29 +91,29 @@
   globals.require.brunch = true;
 })();
 require.register("app", function(exports, require, module) {
-var index = require('scripts/index').index;
+var App = (function() {
+    $(function() {
+        var section = require("scripts/index");
+    });
+})();
 
-
-window.onload = function() {
-  index();
-}
 });
 
 ;require.register("scripts/index", function(exports, require, module) {
-var indexTpl = require('templates/index');
+var tpl = require("templates/index");
 
-exports.index = function(){
-    alert('af')
-    var mark = indexTpl({})
-    $('#site').append(mark);
-}
+var IndexPage = (function() {
+    $('#content').html(tpl({}));
+})();
+
+module.exports = IndexPage;
 });
 
 ;require.register("templates/index", function(exports, require, module) {
 module.exports = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
-__p+='<script id="index-tpl" type="text/template">\r\n    <p>this is the index template</p>\r\n</script>';
+__p+='<div class="container-fluid">\r\n    <h1>Brunch landing</h1>\r\n    <h2>this is the index template</h2>\r\n    <div class="row">\r\n        <div class="col-lg-10">\r\n            <p>Landing skeleton is a really basic skeleton, ready to quickstart the development of landing pages and basic applications.</p>\r\n            <h3>Styling options</h3>\r\n            <p> It includes by default:</p>\r\n            <ul>\r\n                <li>Bootstrap. </li>\r\n                <li>Some sample less mixins compiled from different sources.</li>\r\n            </ul>\r\n            <h3>Scripting</h3>\r\n            <p>Libraries included:</p>\r\n            <ul>\r\n                <li>Require.js (comes together with brunch)</li>\r\n                <li>Jquery</li>\r\n                <li>Underscore</li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>';
 }
 return __p;
 };

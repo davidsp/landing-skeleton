@@ -1,7 +1,7 @@
-var indexTpl = require('templates/index');
+var tpl = require("templates/index");
 
-exports.index = function(){
-    alert('af')
-    var mark = indexTpl({})
-    $('#site').append(mark);
-}
+var IndexPage = (function() {
+    $('#content').html(tpl({}));
+})();
+
+module.exports = IndexPage;

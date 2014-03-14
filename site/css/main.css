@@ -6289,3 +6289,13 @@ http://css-tricks.com/snippets/css/useful-css3-less-mixins/
   font-size: 0;
 }
 
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
