@@ -2,6 +2,7 @@
 *.diff
 *.err
 *.orig
+*.map
 *.log
 *.rej
 *.swo
@@ -26,7 +27,7 @@ node_modules/
 tmp/
 
 # Brunch output folder.
-public/
+site/
 
 # Bower stuff.
 bower_components/
