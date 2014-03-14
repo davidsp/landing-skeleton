@@ -10,8 +10,9 @@ exports.config =
         'js/libs.js': /^vendor/
       order:
         before: [
-          'vendor/javascripts/jquery-1.11.0.min.js'
-          'vendor/javascripts/underscore-1.6.js'
+          'vendor/javascripts/jquery.min.js'
+          'vendor/javascripts/underscore.min.js'
+          'vendor/javascripts/bootstrap.min.js'
         ]
 
     stylesheets:

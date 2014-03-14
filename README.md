@@ -25,9 +25,13 @@ It is meant to work as an starting point when putting together small-medium size
             - https://github.com/mrkrupski/LESS-Dynamic-Stylesheet
             - https://gist.github.com/davidsp/9469147
         * Twitter bootstrap (http://getbootstrap.com/)
+    * JS
+        * Vanilla JS.
+        * jQuery.
+        * Underscore.
+        * Bootstrap components.
     * Live.reload
 
 * Todos.
     * Clean and group mixins (simple grids and the like).
     * Add mixins for absolute/centering/flexboxing stuff. 
-    * Create proper index file
