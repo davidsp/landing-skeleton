@@ -18,7 +18,6 @@
     "uglify-js-brunch": "latest",
     "less-brunch": "latest",
     "underscore-brunch": "latest",
-    "underscore-template-brunch": "latest",
     "auto-reload-brunch": "latest"
   }
 }

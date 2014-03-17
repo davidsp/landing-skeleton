@@ -6,7 +6,7 @@ It is meant to work as an starting point when putting together small-medium size
 
 ## Getting started
 * Install (if you don't have them):
-    * [Node.js](http://nodejs.org): `brew install node` on OS X
+    * [Node.js](http://nodejs.org/): `brew install node` on OS X 
     * [Brunch](http://brunch.io): `npm install -g brunch`
     * [Bower](http://bower.io): `npm install -g bower`
     * Brunch plugins and Bower dependencies: `npm install & bower install`.
@@ -32,6 +32,6 @@ It is meant to work as an starting point when putting together small-medium size
         * Bootstrap components.
     * Live.reload
 
-* Todos.
+* Posible todos.
     * Clean and group mixins (simple grids and the like).
     * Add mixins for absolute/centering/flexboxing stuff. 

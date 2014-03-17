@@ -1,5 +1,4 @@
 exports.config =
-  sourceMaps: false
   paths:
     public:
       'site'
