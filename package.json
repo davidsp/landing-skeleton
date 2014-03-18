@@ -2,7 +2,7 @@
   "name": "landing-skeleton",
   "description": "Brunch skeleton for a quick start of new small-mid sized projects",
   "author": "David Saiz",
-  "version": "0.1",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/davidsp/landing-skeleton"
